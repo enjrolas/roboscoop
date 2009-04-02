@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		F058706506907EC00035817D = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058706606907EC00035817D = {
+			buildActionMask = 2147483647;
+			files = (
+				F058707506907F270035817D,
+				F0587083069080560035817D,
+				F0587084069080560035817D,
+				F05870A4069081930035817D,
+				F05870B0069082680035817D,
+				F05870B4069083290035817D,
+				F05870B8069083680035817D,
+				F05870BC069083B20035817D,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058706706907EC00035817D = {
+			buildActionMask = 2147483647;
+			files = (
+				F05870A9069081E20035817D,
+				F05870AA069081E20035817D,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058706806907EC00035817D = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058706906907EC00035817D = {
+			buildPhases = (
+				F058706506907EC00035817D,
+				F058706606907EC00035817D,
+				F058706706907EC00035817D,
+				F058706806907EC00035817D,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../../aBinary;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREFIX_HEADER = aMac/macx_aDataLogger_pfx.h;
+				PRODUCT_NAME = aDataLogger;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXToolTarget;
+			name = aDataLogger;
+			productInstallPath = /usr/local/bin;
+			productName = aDataLogger;
+			productReference = F058706A06907EC00035817D;
+		};
+		F058706A06907EC00035817D = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = aDataLogger;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F058707406907F270035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = stdio_aDataLogger.c;
+			path = aMac/stdio_aDataLogger.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F058707506907F270035817D = {
+			fileRef = F058707406907F270035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F058707E069080390035817D = {
+			children = (
+				F05870BB069083B20035817D,
+				F05870B7069083680035817D,
+				F05870B3069083290035817D,
+				F05870AF069082680035817D,
+				F05870A3069081930035817D,
+				F0587081069080560035817D,
+				F058707406907F270035817D,
+				F0587082069080560035817D,
+			);
+			isa = PBXGroup;
+			name = aSource;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F0587081069080560035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aModuleUtil.c;
+			path = ../../aSource/aModuleUtil.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F0587082069080560035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aStream_STDIO_Console.c;
+			path = ../../aSource/aStream_STDIO_Console.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F0587083069080560035817D = {
+			fileRef = F0587081069080560035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F0587084069080560035817D = {
+			fileRef = F0587082069080560035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870A3069081930035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aModuleVM.c;
+			path = ../../aSource/aModuleVM.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870A4069081930035817D = {
+			fileRef = F05870A3069081930035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870A7069081E20035817D = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = aIO.framework;
+			path = ../../aBinary/aIO.framework;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870A8069081E20035817D = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = aStem.framework;
+			path = ../../aBinary/aStem.framework;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870A9069081E20035817D = {
+			fileRef = F05870A7069081E20035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870AA069081E20035817D = {
+			fileRef = F05870A8069081E20035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870AF069082680035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aUtil.c;
+			path = ../../aSource/aUtil.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870B0069082680035817D = {
+			fileRef = F05870AF069082680035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870B3069083290035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aDataLogger.c;
+			path = aCommon/aDataLogger.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870B4069083290035817D = {
+			fileRef = F05870B3069083290035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870B7069083680035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aModuleVal.c;
+			path = ../../aSource/aModuleVal.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870B8069083680035817D = {
+			fileRef = F05870B7069083680035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F05870BB069083B20035817D = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = aStemCore.c;
+			path = ../../aSource/aStemCore.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F05870BC069083B20035817D = {
+			fileRef = F05870BB069083B20035817D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F06F3F8F0469794200A80169 = {
+			children = (
+				F058707E069080390035817D,
+				F06F3FAC04697B2900A80169,
+				F06F3FB704697D1800A80169,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F06F3F910469794200A80169 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../aBinary;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "../../aInclude ../../aSystem aCommon";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		F06F3F920469794200A80169 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../aBinary;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = "../../aInclude ../../aSystem aCommon";
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		F06F3F930469794200A80169 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				F06F3F910469794200A80169,
+				F06F3F920469794200A80169,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = F06F3F8F0469794200A80169;
+			productRefGroup = F06F3FB704697D1800A80169;
+			projectDirPath = "";
+			targets = (
+				F058706906907EC00035817D,
+			);
+		};
+		F06F3FAC04697B2900A80169 = {
+			children = (
+				F05870A7069081E20035817D,
+				F05870A8069081E20035817D,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F06F3FB704697D1800A80169 = {
+			children = (
+				F058706A06907EC00035817D,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+	};
+	rootObject = F06F3F930469794200A80169;
+}

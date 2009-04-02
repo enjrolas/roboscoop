@@ -22,6 +22,15 @@ def sharpTurn(speed):  #a turn in place where one side goes forward at <speed> w
                        #other side goes backwards.  Negative speed turns left,
                        #positive turns right
 
+def turnAngle(angle): #turns an angle(in degrees) relative to the current heading.
+                      #the compass has .1 degree resolution
+
+
+
+#take a look at the module 'signal' to set asynchronous event handlers.  I want
+#to attach one to the arduino's serial line, so I can see if it's trying to tell
+#me that the bump sensors are triggered.
+
 def quit():
     ser.close()
     

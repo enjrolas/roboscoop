@@ -1,0 +1,10 @@
+
+                   Release Notes
+
+Release Notes for the BrainStem/Garcia software and
+Errata Notes for BrainStem module firmware may be
+found in the "Errata" section of the online reference:
+
+  http://www.acroname.com/brainstem/ref/ref.html
+
+------------- Thanks for using the BrainStem! -------------

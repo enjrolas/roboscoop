@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0CFAE370E6DC7680098663E /* aAnalog.c in Sources */ = {isa = PBXBuildFile; fileRef = F0586FF2069076040035817D /* aAnalog.c */; };
+		F0CFAE380E6DC7680098663E /* aServo.c in Sources */ = {isa = PBXBuildFile; fileRef = F0586FF3069076040035817D /* aServo.c */; };
+		F0CFAE390E6DC7680098663E /* aStemCore.c in Sources */ = {isa = PBXBuildFile; fileRef = F0586FFD069079F50035817D /* aStemCore.c */; };
+		F0CFAE3A0E6DC7680098663E /* macx_aStub.c in Sources */ = {isa = PBXBuildFile; fileRef = F058700106907A190035817D /* macx_aStub.c */; };
+		F0CFAE3B0E6DC7680098663E /* aDigital.c in Sources */ = {isa = PBXBuildFile; fileRef = F058700506907A600035817D /* aDigital.c */; };
+		F0CFAE3C0E6DC7680098663E /* aUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F058700906907ACA0035817D /* aUtil.c */; };
+		F0CFAE3E0E6DC7680098663E /* aIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F058700F06907B490035817D /* aIO.framework */; };
+		F0CFAE3F0E6DC7680098663E /* aStem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F058701006907B490035817D /* aStem.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0586FF2069076040035817D /* aAnalog.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = aAnalog.c; path = ../../aSource/aAnalog.c; sourceTree = SOURCE_ROOT; };
+		F0586FF3069076040035817D /* aServo.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = aServo.c; path = ../../aSource/aServo.c; sourceTree = SOURCE_ROOT; };
+		F0586FFD069079F50035817D /* aStemCore.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = aStemCore.c; path = ../../aSource/aStemCore.c; sourceTree = SOURCE_ROOT; };
+		F058700106907A190035817D /* macx_aStub.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = macx_aStub.c; path = aMac/macx_aStub.c; sourceTree = SOURCE_ROOT; };
+		F058700506907A600035817D /* aDigital.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = aDigital.c; path = ../../aSource/aDigital.c; sourceTree = SOURCE_ROOT; };
+		F058700906907ACA0035817D /* aUtil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = aUtil.c; path = ../../aSource/aUtil.c; sourceTree = SOURCE_ROOT; };
+		F058700F06907B490035817D /* aIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = aIO.framework; path = ../../aBinary/aIO.framework; sourceTree = SOURCE_ROOT; };
+		F058701006907B490035817D /* aStem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = aStem.framework; path = ../../aBinary/aStem.framework; sourceTree = SOURCE_ROOT; };
+		F0CFAE450E6DC7680098663E /* aStub */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aStub; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0CFAE3D0E6DC7680098663E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CFAE3E0E6DC7680098663E /* aIO.framework in Frameworks */,
+				F0CFAE3F0E6DC7680098663E /* aStem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F06F3F8F0469794200A80169 = {
+			isa = PBXGroup;
+			children = (
+				F06F3F9504697A1700A80169 /* aCommon */,
+				F06F4026046997ED00A80169 /* aMac */,
+				F06F3FAC04697B2900A80169 /* Frameworks */,
+				F06F3FB704697D1800A80169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F06F3F9504697A1700A80169 /* aCommon */ = {
+			isa = PBXGroup;
+			children = (
+				F058700906907ACA0035817D /* aUtil.c */,
+				F058700506907A600035817D /* aDigital.c */,
+				F0586FFD069079F50035817D /* aStemCore.c */,
+				F0586FF2069076040035817D /* aAnalog.c */,
+				F0586FF3069076040035817D /* aServo.c */,
+			);
+			name = aCommon;
+			sourceTree = "<group>";
+		};
+		F06F3FAC04697B2900A80169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F058700F06907B490035817D /* aIO.framework */,
+				F058701006907B490035817D /* aStem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06F3FB704697D1800A80169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CFAE450E6DC7680098663E /* aStub */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F06F4026046997ED00A80169 /* aMac */ = {
+			isa = PBXGroup;
+			children = (
+				F058700106907A190035817D /* macx_aStub.c */,
+			);
+			name = aMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F0CFAE350E6DC7680098663E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F0CFAE340E6DC7680098663E /* aStub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CFAE410E6DC7680098663E /* Build configuration list for PBXNativeTarget "aStub" */;
+			buildPhases = (
+				F0CFAE350E6DC7680098663E /* Headers */,
+				F0CFAE360E6DC7680098663E /* Sources */,
+				F0CFAE3D0E6DC7680098663E /* Frameworks */,
+				F0CFAE400E6DC7680098663E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aStub;
+			productInstallPath = /usr/local/bin;
+			productName = aStub;
+			productReference = F0CFAE450E6DC7680098663E /* aStub */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06F3F930469794200A80169 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F0CFAE1C0E6DC6C90098663E /* Build configuration list for PBXProject "macx_aStub" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = F06F3F8F0469794200A80169;
+			productRefGroup = F06F3FB704697D1800A80169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0CFAE340E6DC7680098663E /* aStub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		F0CFAE400E6DC7680098663E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0CFAE360E6DC7680098663E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CFAE370E6DC7680098663E /* aAnalog.c in Sources */,
+				F0CFAE380E6DC7680098663E /* aServo.c in Sources */,
+				F0CFAE390E6DC7680098663E /* aStemCore.c in Sources */,
+				F0CFAE3A0E6DC7680098663E /* macx_aStub.c in Sources */,
+				F0CFAE3B0E6DC7680098663E /* aDigital.c in Sources */,
+				F0CFAE3C0E6DC7680098663E /* aUtil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0CFAE160E6DC6C90098663E /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		F0CFAE170E6DC6C90098663E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		F0CFAE180E6DC6C90098663E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		F0CFAE420E6DC7680098663E /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../aBinary;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = aMac/macx_aStub_pfx.h;
+				HEADER_SEARCH_PATHS = (
+					../../aInclude,
+					../../aSystem,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = aStub;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F0CFAE430E6DC7680098663E /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../aBinary;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = aMac/macx_aStub_pfx.h;
+				HEADER_SEARCH_PATHS = (
+					../../aInclude,
+					../../aSystem,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = aStub;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F0CFAE440E6DC7680098663E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/acroname/Desktop/cdev/brainstem/aBinary;
+				GCC_PREFIX_HEADER = aMac/macx_aStub_pfx.h;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = aStub;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0CFAE1C0E6DC6C90098663E /* Build configuration list for PBXProject "macx_aStub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CFAE160E6DC6C90098663E /* Development */,
+				F0CFAE170E6DC6C90098663E /* Deployment */,
+				F0CFAE180E6DC6C90098663E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F0CFAE410E6DC7680098663E /* Build configuration list for PBXNativeTarget "aStub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CFAE420E6DC7680098663E /* Development */,
+				F0CFAE430E6DC7680098663E /* Deployment */,
+				F0CFAE440E6DC7680098663E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06F3F930469794200A80169 /* Project object */;
+}

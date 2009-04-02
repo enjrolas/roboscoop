@@ -1,0 +1,7 @@
+import serial
+
+ser=serial.Serial( '/dev/tty.usbserial-A4001ttV' ,19200,timeout=0)
+#line =ser.readline()
+ser.write('ssaaa')
+ser.close()
+

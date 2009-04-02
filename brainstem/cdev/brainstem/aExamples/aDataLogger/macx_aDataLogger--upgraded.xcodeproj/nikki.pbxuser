@@ -1,0 +1,90 @@
+// !$*UTF8*$!
+{
+	A1DF3B340F82913600B91F11 /* aDataLogger */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = aDataLogger;
+		sourceDirectories = (
+		);
+	};
+	A1DF3B490F82915800B91F11 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	A1DF3B4A0F82915800B91F11 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F058706906907EC00035817D /* aDataLogger */ = {
+		activeExec = 0;
+		executables = (
+			A1DF3B340F82913600B91F11 /* aDataLogger */,
+		);
+	};
+	F05870B3069083290035817D /* aDataLogger.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 6902}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 6473}, {711, 429}}";
+			sepNavWindowFrame = "{{15, 215}, {750, 558}}";
+		};
+	};
+	F06F3F930469794200A80169 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeExecutable = A1DF3B340F82913600B91F11 /* aDataLogger */;
+		activeTarget = F058706906907EC00035817D /* aDataLogger */;
+		codeSenseManager = A1DF3B4A0F82915800B91F11 /* Code sense */;
+		executables = (
+			A1DF3B340F82913600B91F11 /* aDataLogger */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 260215095;
+			PBXWorkspaceStateSaveDate = 260215095;
+		};
+		sourceControlManager = A1DF3B490F82915800B91F11 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}

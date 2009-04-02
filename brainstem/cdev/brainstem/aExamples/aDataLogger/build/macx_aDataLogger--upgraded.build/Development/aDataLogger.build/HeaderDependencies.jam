@@ -1,0 +1,60 @@
+rule DefineHeaderDependencies
+{
+	INCLUDES "$(PROJECT_DIR)/aMac/stdio_aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStream_STDIO_Console.h" ;
+	INCLUDES "$(PROJECT_DIR)/aMac/stdio_aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aExamples/aDataLogger/aCommon/aDataLogger.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStream_STDIO_Console.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aErr.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/stdio.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/string.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/stdlib.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aMemLeakDebug.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/string.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/stdio.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/usr/include/stdlib.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aMemLeakDebug.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aAssert.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aMemLeakDebug.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aExamples/aDataLogger/aCommon/aDataLogger.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aCmd.tea" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemMsg.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleUtil.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleUtil.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aStream_STDIO_Console.c" : "/usr/include/stdio.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aStream_STDIO_Console.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStream_STDIO_Console.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVM.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aCmd.tea" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVM.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemMsg.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVM.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVM.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVM.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVM.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVM.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aTEA.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aTEA.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aOSDefs.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aUtil.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aIO.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aCmd.tea" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aModule.tea" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVM.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVal.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/aCommon/aDataLogger.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aExamples/aDataLogger/aCommon/aDataLogger.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVal.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVal.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aModule.tea" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVal.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aCmd.tea" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVal.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemMsg.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVal.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemCore.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVal.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aModuleVal.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aModuleVal.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemCore.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStem.h" ;
+	INCLUDES "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemCore.h" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aTEA.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aStemCore.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aSystem/aCmd.tea" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aStemCore.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aUtil.h" ;
+	INCLUDES "$(PROJECT_DIR)/../../aSource/aStemCore.c" : "/Users/nikki/Desktop/NUB/roboscoop/code/brainstem/cdev/brainstem/aInclude/aStemCore.h" ;
+}
+
+DefineHeaderDependencies "<aDataLogger>aDataLogger$(TOOL_SUFFIX)" ;
+

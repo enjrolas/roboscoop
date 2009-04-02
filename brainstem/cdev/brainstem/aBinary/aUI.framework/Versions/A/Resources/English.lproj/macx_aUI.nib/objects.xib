@@ -1,0 +1,130 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="12" name="allObjects">
+    <object class="IBCarbonWindow" id="166">
+      <string name="windowRect">401 67 477 317 </string>
+      <string name="title">Message</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="bounds">0 0 76 250 </string>
+        <array count="3" name="subviews">
+          <object class="IBCarbonStaticText" id="182">
+            <string name="bounds">25 50 41 230 </string>
+            <ostype name="controlSignature">text</ostype>
+            <int name="controlID">1</int>
+            <boolean name="small">TRUE</boolean>
+            <string name="title">---</string>
+          </object>
+          <object class="IBCarbonButton" id="183">
+            <string name="bounds">49 179 66 230 </string>
+            <ostype name="controlSignature">ok  </ostype>
+            <boolean name="small">TRUE</boolean>
+            <string name="title">Ok</string>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonPicture" id="198">
+            <string name="bounds">9 10 41 42 </string>
+            <boolean name="dontTrack">FALSE</boolean>
+            <int name="contentResID">128</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">53</int>
+      <string name="helpTagText">Message</string>
+    </object>
+    <reference idRef="167"/>
+    <reference idRef="182"/>
+    <reference idRef="183"/>
+    <object class="IBCarbonWindow" id="186">
+      <string name="windowRect">199 67 364 317 </string>
+      <string name="title">Select</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="187">
+        <string name="bounds">0 0 165 250 </string>
+        <string name="viewFrame">0 0 250 165 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonStaticText" id="191">
+            <string name="bounds">26 51 42 267 </string>
+            <string name="viewFrame">51 26 216 16 </string>
+            <ostype name="controlSignature">text</ostype>
+            <int name="controlID">1</int>
+            <boolean name="small">TRUE</boolean>
+            <string name="title">---</string>
+          </object>
+          <object class="IBCarbonCustom" id="192">
+            <string name="bounds">50 11 154 176 </string>
+            <string name="viewFrame">11 50 165 104 </string>
+            <ostype name="controlSignature">alst</ostype>
+            <int name="controlID">128</int>
+          </object>
+          <object class="IBCarbonButton" id="193">
+            <string name="bounds">50 188 67 240 </string>
+            <string name="viewFrame">188 50 52 17 </string>
+            <ostype name="controlSignature">ok  </ostype>
+            <boolean name="enabled">FALSE</boolean>
+            <boolean name="small">TRUE</boolean>
+            <string name="title">Select</string>
+          </object>
+          <object class="IBCarbonButton" id="194">
+            <string name="bounds">75 188 92 240 </string>
+            <string name="viewFrame">188 75 52 17 </string>
+            <ostype name="controlSignature">not!</ostype>
+            <boolean name="small">TRUE</boolean>
+            <string name="title">Cancel</string>
+          </object>
+          <object class="IBCarbonPicture" id="197">
+            <string name="bounds">10 11 42 43 </string>
+            <string name="viewFrame">11 10 32 32 </string>
+            <boolean name="dontTrack">FALSE</boolean>
+            <int name="contentResID">8715</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="hasCloseBox">FALSE</boolean>
+      <boolean name="hasCollapseBox">FALSE</boolean>
+      <boolean name="hasHorizontalZoom">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="hasVerticalZoom">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">50</int>
+      <string name="helpTagText">Please Select a File</string>
+    </object>
+    <reference idRef="187"/>
+    <reference idRef="191"/>
+    <reference idRef="192"/>
+    <reference idRef="193"/>
+    <reference idRef="194"/>
+    <reference idRef="197"/>
+    <reference idRef="198"/>
+  </array>
+  <array count="12" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="166"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+    <reference idRef="186"/>
+    <reference idRef="187"/>
+    <reference idRef="187"/>
+    <reference idRef="187"/>
+    <reference idRef="187"/>
+    <reference idRef="187"/>
+    <reference idRef="167"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Message</string>
+    <reference idRef="166"/>
+    <string>PickFile</string>
+    <reference idRef="186"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">201</unsigned_int>
+</object>
