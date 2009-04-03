@@ -1,7 +1,7 @@
 import serial
 import time
 
-# hello, world! (wbosworth push test)
+# hello, world, v2
 
 class arduino:
     def __init__(self):
