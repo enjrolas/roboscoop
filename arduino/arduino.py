@@ -1,6 +1,8 @@
 import serial
 import time
 
+# hello, world! (wbosworth push test)
+
 class arduino:
     def __init__(self):
         self.compass=0
@@ -11,7 +13,8 @@ class arduino:
         self.frontRange=0
         self.backRange=0
         self.motorPower=0
-        self.ser=serial.Serial( '/dev/tty.usbserial-A4001ttV' ,19200,timeout=0)
+        # find yer port!
+        self.ser=serial.Serial( 'COM4' ,19200,timeout=0)
         print("serial port open")
 
     '''
@@ -33,7 +36,7 @@ class arduino:
 
 
     def getData(self):
-        self.ser.write('\n')
+        self.ser.write('/n')
         time.sleep(.05)
         line=self.ser.read(12)
         print(line)
