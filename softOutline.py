@@ -1,5 +1,5 @@
 # this is a psuedocode document for the RoboScoop code
-# outlines primary states and classes.
+# outlines primary states, classes, and hardware code
 
 '''
 revisions:
@@ -108,5 +108,15 @@ class Log():
 class Remote():
         this is probably not a formal piece software piece
         
+________________________________________________________________
+# machine code 
+Arduino microcontroller code:
+    arduino code (arduino is a language and a piece of hardware!) preps the arduino
+    for the specific I/O we are implementing. covers same I/O as arduino class above
+
+Brainstem code:
+    brainstem (motor drivers) come programmed from the factory. their machine interface
+    is online. There are APIs, but there is also a serial library
+
 
         
