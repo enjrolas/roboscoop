@@ -1,7 +1,7 @@
 class robotMotors:
     def __init__(self):
-        front=motor('/dev/tty.usbserial-A60087za')
-        back=motor('/dev/tty.usbserial-A60087PJ')
+        front=motor('COM5')
+        back=motor('COM6')
 
     def position(self, setpoint):
         front.position(setpoint)
