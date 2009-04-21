@@ -36,7 +36,7 @@ class arduino:
 
 
     def getData(self):
-        self.ser.write('/n')
+        self.ser.write('\n')
         time.sleep(.05)
         line=self.ser.read(12)
         print(line)

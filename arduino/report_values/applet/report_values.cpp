@@ -1,3 +1,4 @@
+#include "WProgram.h"
 /*
 
 This program lies in an infinite loop.
@@ -39,16 +40,15 @@ A switch to callibrate the CMPS03 can be connected between pin 6 of the CMPS03 a
 #define backRange 7
 #define motorPower 8
 
-#define frontBumperPin 0
-#define backBumperPin 1
-#define motorPowerPin 2
+#define frontBumperPin 2
+#define backBumperPin 3
+#define motorPowerPin 4
 
 #define batteryPin 0  //the battery voltage is on analog pin 0
 #define poopPin 1
 #define frontRangePin 2
 #define backRangePin 3
 
-#include "WProgram.h"
 void setup();
 void readCompass();
 void loop();
@@ -63,6 +63,9 @@ void setup(){
   pinMode(frontBumperPin,INPUT);  //front bumper
   pinMode(backBumperPin,INPUT);  //rear bumper
   pinMode(motorPowerPin,INPUT);  //motor power
+//  digitalWrite(frontBumperPin,HIGH);  //front bumper pullup
+//  digitalWrite(backBumperPin,HIGH);  //rear bumper pullup
+//  digitalWrite(motorPowerPin,HIGH);  //motor power pullup
   Serial.begin(19200);
 }
 
@@ -126,10 +129,13 @@ void reportValues()
 {
       int i;
       for(i=0;i<numValues;i++)
+      {
         Serial.print(values[i]);
+      }
       Serial.print(checksum);
       Serial.println();
 }
+
 int main(void)
 {
 	init();

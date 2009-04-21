@@ -88,7 +88,7 @@ class Arduino():
         manipulatorVarious
         Xbee (?)
 
-class Motor():
+class robotDrive():
         # motor class commands BrainStem modules the following
         setVelocity(direction, speed)
         setPosition(direction, speed)

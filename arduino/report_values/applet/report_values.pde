@@ -56,6 +56,9 @@ void setup(){
   pinMode(frontBumperPin,INPUT);  //front bumper
   pinMode(backBumperPin,INPUT);  //rear bumper
   pinMode(motorPowerPin,INPUT);  //motor power
+//  digitalWrite(frontBumperPin,HIGH);  //front bumper pullup
+//  digitalWrite(backBumperPin,HIGH);  //rear bumper pullup
+//  digitalWrite(motorPowerPin,HIGH);  //motor power pullup
   Serial.begin(19200);
 }
 
@@ -119,7 +122,9 @@ void reportValues()
 {
       int i;
       for(i=0;i<numValues;i++)
+      {
         Serial.print(values[i]);
+      }
       Serial.print(checksum);
       Serial.println();
 }
