@@ -37,9 +37,9 @@ class arduino:
 
     def getData(self):
         self.ser.write('\n')
-        time.sleep(.05)
+        time.sleep(.05) #insert delay to let arduino breath
         line=self.ser.read(12)
-        print(line)
+        print(line) # [good way to debug]
         self.compass=ord(line[0])*256+ord(line[1])
         self.battery=ord(line[2])
         self.frontBumper=ord(line[3])
@@ -48,7 +48,6 @@ class arduino:
         self.frontRange=ord(line[6])
         self.backRange=ord(line[7])
         self.motorPower=ord(line[8])
-        
 
     def close(self):
         self.ser.close()
