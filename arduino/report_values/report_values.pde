@@ -5,8 +5,8 @@
  the high byte of the compass value
  the low byte ''    ''      '' 
  the battery level coming off the a2d
- 255 if the front bumper is pressed, 0 if it's not
- 255 if the rear bumper is pressed, 0 if it's not
+ 0 if the front bumper is pressed, 255 if it's not
+ 0 if the rear bumper is pressed, 255 if it's not
  the poop sensor level coming off the a2d
  the front rangefinder level coming off the a2d
  the rear rangefinder level coming off the a2d

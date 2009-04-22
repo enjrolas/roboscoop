@@ -1,3 +1,7 @@
 RoboScoop code and design docs
 
 software in Python 2.5 / 2.6 (hopefully this not a problem...)
+
+SIMPLE ERRORS ACROSS PLATFORMS:
++ accessing the correct com ports for serial stuff 
++ have the correct sys.paths installed for accessing new classes 
