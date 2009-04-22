@@ -138,7 +138,7 @@ class robotDrive:
     def rotatePosition(self, angle):
         self.positionMode()
         self.leftValue(angle)
-        self.rightValue(angle)
+        self.rightValue(angle) 
 
     def rotateVelocity(self, velocity):
         self.velocityMode()
