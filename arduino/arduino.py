@@ -14,7 +14,7 @@ class arduino:
         self.backRange=0
         self.motorPower=0
         # find yer port!
-        self.ser=serial.Serial( 'COM4' ,19200,timeout=0)
+        self.ser=serial.Serial( 'COM7' ,19200,timeout=0)
         print("serial port open")
 
     '''
