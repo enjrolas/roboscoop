@@ -11,22 +11,16 @@ To tell the motor to move to a position target (i.e. 'go 200 clicks'),
 
 class robotDrive:
     def __init__(self):
-        self.positionP=0.1
+        self.positionP=1
         self.positionI=0
         self.positionD=0
 
-        self.velocityP=0.1
+        self.velocityP=1
         self.velocityI=0
         self.velocityD=0
 
         self.front=serial.Serial( 'COM5' ,9600,timeout=0)
         self.back=serial.Serial( 'COM6' ,9600,timeout=0)
-
-        #set the PWM frequency to 2.5khz instead of 40khz
-        freqString=chr(4)+chr(5)+chr(63)+chr(0)+chr(8)+chr(2)+chr(255)
-        self.front.write(freqString)
-        self.back.write(freqString)
-        
         print("serial port open")
 
 #initialized position feedback mode
@@ -57,9 +51,9 @@ class robotDrive:
     def formatVariable(self, variable):
         formatted=0
         done=0
-        fraction=variable-float(int(variable))
+        fraction=variable-int(variable)
         for i in range(0,32):   #the bottom 5 bits of the formatted number are fractional bits representing 32ths
-            if((float(i)/32)>=fraction) and (done==0):
+            if((i/32)>fraction) and (done==0):
                 formatted+=i
                 done=1
         formatted+=int(variable)*32
